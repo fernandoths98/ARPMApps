@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FF3E0"
+    tools:context=".HomeActivity">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linier"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/atomic_age"
+                        android:text="DASHBOARD"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:background="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"/>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="16dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="15dp"
+                                android:text="Welcome Sir ! How Are You Today ?"
+                                android:textSize="13dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:fontFamily="monospace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/waktu"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="15dp"
+                                android:text="Senin, 21 Juni 2021"
+                                android:textSize="10dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:fontFamily="monospace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/ucpn"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="15dp"
+                                android:text="Pukul 09:00 WIB"
+                                android:textSize="10dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:fontFamily="monospace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/cuaca"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_below="@id/linier"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/txt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="#FFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_honda"
+                                    android:onClick="layout_honda"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp">
+
+                                    <ImageView
+
+                                        android:id="@+id/honda_img"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/honda" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/honda_img"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:fontFamily="@font/atomic_age"
+                                        android:text="HONDA"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="#FFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_toyota"
+                                    android:onClick="layout_toyota"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp">
+
+                                    <ImageView
+
+                                        android:id="@+id/toyota_img"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/toyota" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/toyota_img"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:fontFamily="@font/atomic_age"
+                                        android:text="TOYOTA"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linier2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="#FFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_daihatsu"
+                                    android:onClick="layout_daihatsu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp">
+
+                                    <ImageView
+                                        android:id="@+id/daihatsu_img"
+                                        android:layout_width="130dp"
+                                        android:layout_height="120dp"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:src="@drawable/daihatsu" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/daihatsu_img"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="-30dp"
+                                        android:fontFamily="@font/atomic_age"
+                                        android:text="DAIHATSU"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="#FFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout_all_brand"
+                                    android:onClick="layout_all"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp">
+
+                                        <ImageView
+                                            android:id="@+id/all_brand"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginBottom="10dp"
+                                            android:src="@drawable/all" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/all_brand"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="25dp"
+                                            android:fontFamily="@font/atomic_age"
+                                            android:text="ALL BRAND"
+                                            android:textColor="#000000"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            app:auto_cycle="true"
+                            app:corner_radius="20"
+                            app:delay="0"
+                            app:error_image="@drawable/error"
+                            app:layout_constraintBottom_toTopOf="@id/txt"
+                            app:period="1000"
+                            app:placeholder="@drawable/bg" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+                <TextView
+                    android:id="@+id/txt"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:fontFamily="@font/atomic_age"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="Copyright @ Fernando Teguh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/bottom_navi"/>
+
+                <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                    android:id="@+id/bottom_navi"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/rounded"
+                    android:elevation="16dp"
+                    android:padding="8dp"
+                    android:layout_height="72dp"
+                    app:cnb_menuResource="@menu/menu_bottom" />
+        </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

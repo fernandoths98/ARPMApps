@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@drawable/bg_info"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_info"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARPM APPS"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright @ Fernando Teguh"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="      ARPM APPS adalah aplikasi yang berguna bagi para calon pembeli mobil baru
+karena pada aplikasi ini, calon pembeli mobil baru akan dimudahkan dengan fitur rekomendasi
+dalam pembelian mobil mulai dari memilih harga terendah, tipe body, varian mobil, jenis transmisi mobil,
+dan juga bahan bakar pada mobil, sehingga para calon pembeli mobil baru
+dapat membeli mobil baru yang sesuai dengan kebutuhan mereka sehari hari"
+            android:layout_width="match_parent"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

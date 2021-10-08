@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".AllBrandActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linier"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:outlineSpotShadowColor="@color/black"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:onClick="back"
+                    android:background="@drawable/ic_back"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/atomic_age"
+                    android:text="ALL BRAND DASHBOARD"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linierLayout"
+            android:orientation="vertical"
+            android:layout_below="@id/linier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <com.google.android.material.textfield.TextInputLayout
+                app:boxStrokeColor="#000"
+                android:textColorHint="#000"
+                android:id="@+id/til_price"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_money"
+                app:startIconTint="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="#000"
+                    android:id="@+id/etPrice"
+                    android:hint="Price"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnMobil_all"
+                android:layout_marginTop="15dp"
+                android:textColor="#000000"
+                android:text="SEARCH"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/copyright"
+            android:layout_below="@id/linierLayout"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="none"
+            tools:listitem="@layout/list_item" />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/atomic_age"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="Copyright @Fernando Teguh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

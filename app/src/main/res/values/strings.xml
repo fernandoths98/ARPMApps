@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ARPM Apps</string>
+    <string name="google_map_key">AIzaSyCxmR096CmtxJG_pV79_rPANSsR5L730r4</string>
+
+    <string name="mapbox_access_token">sk.eyJ1IjoiY2FtcGRldiIsImEiOiJja3JnNHQzemwwZThpMzFxbjF5bjYwMnh1In0.rmdTrcSTznjunOalkvwLqw</string>
+
+    <string-array name="harga" color="#000000">
+        <item color="#000000">Pilih Harga</item>
+        <item>Rp 100.000.000 - Rp 200.000.000</item>
+        <item>Rp 200.000.000 - Rp 300.000.000</item>
+        <item>Rp 300.000.000 - Rp 400.000.000</item>
+        <item>Rp 400.000.000 - Rp 500.000.000</item>
+
+    </string-array>
+
+    <string-array name="varian">
+        <item>Pilih Varian</item>
+        <item>E MT</item>
+        <item>X AT</item>
+        <item>X MT</item>
+        <item>E MT</item>
+
+    </string-array>
+
+    <string-array name="tipe">
+        <item>Pilih Tipe Body</item>
+        <item>Sedan </item>
+        <item>Hatchback </item>
+        <item>MPV </item>
+        <item>SUV </item>
+        <item>Pickup </item>
+
+    </string-array>
+
+    <string-array name="transmisi">
+        <item>Pilih Transmisi</item>
+        <item>Matic </item>
+        <item>Manual </item>
+    </string-array>
+
+    <string-array name="bahanbakar">
+        <item>Pilih Bahan Bakar</item>
+        <item>Bensin </item>
+        <item>Solar </item>
+    </string-array>
+
+
+</resources>

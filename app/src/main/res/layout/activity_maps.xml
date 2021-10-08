@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/linier1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/txtview"
+                        android:background="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"/>
+
+                    <TextView
+                        android:id="@+id/txtview"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/atomic_age"
+                        android:text="MAPS"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            mapbox:mapbox_cameraZoom="12"
+            android:layout_below="@id/linier1"
+            android:id="@+id/mapViews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/txt"
+            />
+
+        <Button
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_toLeftOf="@id/fab_location_search"
+            android:layout_above="@id/txt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btnStart"
+            android:text="Start navigation"
+            android:textColor="#000"
+            android:enabled="false"
+            android:layout_marginLeft="5dp"
+            android:layout_margin="16dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/txt"
+            android:id="@+id/fab_location_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:fontFamily="@font/atomic_age"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Copyright @ Fernando Teguh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_navi_maps"/>
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_navi_maps"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded"
+            android:elevation="16dp"
+            android:padding="8dp"
+            android:layout_height="72dp"
+            app:cnb_menuResource="@menu/menu_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

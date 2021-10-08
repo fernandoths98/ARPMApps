@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:background="#F8D210"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#F8D210"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="20dp"
+                android:background="@color/bluetosca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/img_mobil_all"
+                    android:src="@drawable/ic_car"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/namaMobilAll"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:text="Nama Mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/varianMobilAll"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:text="Varian Mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tipebodyMobilAll"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:text="Type Body Mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/bbMobilAll"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:text="Bahan Bakar Mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/transmisiMobilAll"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:text="Transmisi Mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/hargaMobilAll"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:text="Harga Mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
